@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: repeat(5, 1fr);
+  min-height: 100vh;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(102, 102, 243);
+  grid-column: 1 / 2;
+  grid-row: 1 / 6;
+  gap: 48px;
+  font-weight: bold;
+  color: aliceblue;
+  padding: 16px;
+}
+
+.dboardup {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.dboardmid,
+.dboarddown {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 1.2rem;
+}
+
+.dboardmid > div,
+.dboarddown > div {
+  display: flex;
+  gap: 12px;
+}
+
+.uppersection {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  grid-column: 2 / 6;
+  grid-row: 1 / 2;
+}
