@@ -58,3 +58,56 @@ body {
   grid-column: 2 / 6;
   grid-row: 1 / 2;
 }
+
+.uppersbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.sbarleft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sbar {
+  width: 500px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: blueviolet;
+}
+
+.sbarright {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.lowerbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.lowerbarleft {
+  display: flex;
+  gap: 16px;
+}
+
+.lowerbarleftgreet {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lowerbarright {
+  display: flex;
+  gap: 36px;
+}
+
+.lowerbarright button {
+  width: 100px;
+  height: 40px;
+  border-radius: 16px;
+}
