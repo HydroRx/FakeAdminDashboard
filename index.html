@@ -3,89 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="dashboard">
-        <div class="dboardup">
-          <img src="" alt="logo" />
+    <div class="main">
+      <nav class="dashboard">
+        <div class="dtitle">
+          <img src="assets/view-dashboard.svg" alt="Logo" class="icon" />
           <h1>Dashboard</h1>
         </div>
-
-        <div class="dboardmid">
-          <div>
-            <img src="" alt="logo" />
-            <p>Home</p>
-          </div>
-          <div>
-            <img src="" alt="logo" />
-            <p>Profile</p>
-          </div>
-          <div>
-            <img src="" alt="logo" />
-            <p>Messages</p>
-          </div>
-          <div>
-            <img src="" alt="logo" />
-            <p>History</p>
-          </div>
-          <div>
-            <img src="" alt="logo" />
-            <p>Tasks</p>
-          </div>
-          <div>
-            <img src="" alt="logo" />
-            <p>Communities</p>
-          </div>
+        <div class="menuoptions">
+          <ul>
+            <li>
+              <img src="assets/home.svg" alt="Home" class="icon" />
+              <p>Home</p>
+            </li>
+            <li>
+              <img
+                src="assets/card-account-details-outline.svg"
+                alt="Profile"
+                class="icon"
+              />
+              <p>Profile</p>
+            </li>
+            <li>
+              <img src="assets/message-badge.svg" alt="Messages" class="icon" />
+              <p>Messages</p>
+            </li>
+            <li>
+              <img src="assets/history.svg" alt="History" class="icon" />
+              <p>History</p>
+            </li>
+            <li>
+              <img src="assets/file-multiple.svg" alt="Tasks" class="icon" />
+              <p>Tasks</p>
+            </li>
+            <li>
+              <img
+                src="assets/account-group.svg"
+                alt="Communities"
+                class="icon"
+              />
+              <p>Communities</p>
+            </li>
+            <li>
+              <img src="assets/cog.svg" alt="Settings" class="icon" />
+              <p>Settings</p>
+            </li>
+            <li>
+              <img src="assets/help-box.svg" alt="Support" class="icon" />
+              <p>Support</p>
+            </li>
+            <li>
+              <img src="assets/police-badge.svg" alt="Privacy" class="icon" />
+              <p>Privacy</p>
+            </li>
+          </ul>
         </div>
+      </nav>
 
-        <div class="dboarddown">
-          <div>
-            <img src="" alt="logo" />
-            <p>Settings</p>
-          </div>
-          <div>
-            <img src="" alt="logo" />
-            <p>Support</p>
-          </div>
-          <div>
-            <img src="" alt="logo" />
-            <p>Privacy</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="uppersection">
-        <div class="uppersbar">
-          <div class="sbarleft">
-            <img src="" alt="logo" />
-            <div class="sbar"></div>
-          </div>
-
-          <div class="sbarright">
-            <img src="" alt="bell" />
-            <img src="" alt="img" />
-            <p>Corey Taylor</p>
-          </div>
-        </div>
-
-        <div class="lowerbar">
-          <div class="lowerbarleft">
-            <img src="" alt="logo" />
-            <div class="lowerbarleftgreet">
-              <p>Hi there,</p>
-              <p>Corey Taylor (@ctaylor)</p>
+      <div class="content">
+        <header class="header">
+          <div class="upperdiv">
+            <div class="upperdivleft">
+              <img
+                src="assets/menu.svg"
+                alt="dashboard menu"
+                class="icon"
+                onclick=""
+              />
+              <img src="assets/magnify.svg" alt="Search" class="icon" />
+              <input type="text" placeholder="Search..." aria-label="Search" />
+            </div>
+            <div class="upperdivright">
+              <img
+                src="assets/bell-ring-outline.svg"
+                alt="notifications"
+                class="icon"
+              />
+              <img src="assets/pfp.png" alt="profile picture" class="pfp" />
+              <p>Corey Taylor</p>
             </div>
           </div>
 
-          <div class="lowerbarright">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+          <div class="lowerdiv">
+            <div class="lowerdivleft">
+              <img src="assets/pfp.png" alt="profile picture" class="pfp" />
+              <div class="greet">
+                <p>Hi there,</p>
+                <p class="uname">Corey Taylor (@ctaylor)</p>
+              </div>
+            </div>
+            <div class="lowerdivright">
+              <button>New</button>
+              <button>Upload</button>
+              <button>Share</button>
+            </div>
           </div>
-        </div>
+        </header>
+        <section class="section"></section>
       </div>
     </div>
   </body>
