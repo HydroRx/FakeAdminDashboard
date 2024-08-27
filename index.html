@@ -59,6 +59,13 @@
               <img src="assets/police-badge.svg" alt="Privacy" class="icon" />
               <p>Privacy</p>
             </li>
+            <li class="dhidden">
+              <img
+                src="assets/menu.svg"
+                alt="dashboard menu"
+                class="icon menu-icon"
+              />
+            </li>
           </ul>
         </div>
       </nav>
@@ -70,8 +77,7 @@
               <img
                 src="assets/menu.svg"
                 alt="dashboard menu"
-                class="icon"
-                onclick=""
+                class="icon menu-icon"
               />
               <img src="assets/magnify.svg" alt="Search" class="icon" />
               <input type="text" placeholder="Search..." aria-label="Search" />
@@ -102,8 +108,99 @@
             </div>
           </div>
         </header>
-        <section class="section"></section>
+        <section class="section">
+          <div class="projects">
+            <h3>Your Projects</h3>
+            <div class="cards">
+              <div class="card">
+                <h4>lorem</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
+                  porro esse iste, voluptatem reprehenderit repudiandae in ipsum
+                  saepe laboriosam, vero ipsam quod sed dignissimos, ducimus
+                  sequi? Natus at fugiat repudiandae.
+                </p>
+              </div>
+              <div class="card">
+                <h4>lorem</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
+                  porro esse iste, voluptatem reprehenderit repudiandae in ipsum
+                  saepe laboriosam, vero ipsam quod sed dignissimos, ducimus
+                  sequi? Natus at fugiat repudiandae.
+                </p>
+              </div>
+              <div class="card">
+                <h4>lorem</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
+                  porro esse iste, voluptatem reprehenderit repudiandae in ipsum
+                  saepe laboriosam, vero ipsam quod sed dignissimos, ducimus
+                  sequi? Natus at fugiat repudiandae.
+                </p>
+              </div>
+              <div class="card">
+                <h4>lorem</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
+                  porro esse iste, voluptatem reprehenderit repudiandae in ipsum
+                  saepe laboriosam, vero ipsam quod sed dignissimos, ducimus
+                  sequi? Natus at fugiat repudiandae.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="announcements">
+            <h3>Announcements</h3>
+            <div class="listitems">
+              <ul>
+                <li>
+                  First announcement Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Optio aperiam velit sapiente voluptas
+                </li>
+                <li>
+                  Second announcement Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Optio aperiam velit sapiente voluptas
+                </li>
+                <li>
+                  Third announcement Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Optio aperiam velit sapiente voluptas
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="trending">
+            <h3>Trending</h3>
+            <div class="listitems">
+              <ul>
+                <li>
+                  First trending item Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Optio aperiam velit sapiente voluptas
+                </li>
+                <li>
+                  Second trending item Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Optio aperiam velit sapiente voluptas
+                </li>
+                <li>
+                  Third trending item Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Optio aperiam velit sapiente voluptas
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
+
+    <script>
+      const hamburgerMenus = document.querySelectorAll(".menu-icon");
+      const dashboard = document.querySelector(".dashboard");
+
+      hamburgerMenus.forEach((menu) => {
+        menu.addEventListener("click", () => {
+          dashboard.classList.toggle("show-dashboard");
+        });
+      });
+    </script>
   </body>
 </html>

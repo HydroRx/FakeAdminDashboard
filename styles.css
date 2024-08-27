@@ -39,6 +39,10 @@ body {
   gap: 96px;
 }
 
+.dhidden {
+  display: none;
+}
+
 .dtitle {
   display: flex;
   gap: 12px;
@@ -82,11 +86,75 @@ body {
   background-color: #fff;
   padding: 20px;
   overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "projects projects announcements"
+    "projects projects trending";
+  gap: 20px;
+}
+
+.projects {
+  grid-area: projects;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  padding: 20px;
+  display: grid;
+  gap: 24px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  height: 240px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.announcements {
+  grid-area: announcements;
+  background-color: #d0d0d0;
+  padding: 20px;
+  border-radius: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.trending {
+  grid-area: trending;
+  background-color: #c0c0c0;
+  padding: 20px;
+  border-radius: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.listitems ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 24px;
 }
 
 .icon {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   filter: invert(1);
   margin-right: 0.5rem;
   vertical-align: middle;
@@ -124,7 +192,7 @@ body {
   display: flex;
   align-items: center;
   gap: 36px;
-  margin-right: 96px;
+  margin-right: 104px;
   font-weight: bold;
   .pfp {
     width: 48px;
@@ -183,20 +251,54 @@ body {
   transform: scale(0.98);
 }
 
-@media (max-width: 1200px) {
+.menu-icon {
+  display: none;
+}
+
+.show-dashboard {
+  display: block !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  font-size: 1.5rem;
+  align-items: center;
+  background-color: #333;
+  overflow-y: hidden;
+}
+
+@media (max-width: 1300px) {
   .main {
     grid-template-columns: 1fr;
     grid-template-areas:
       "header"
       "section";
+    overflow-y: auto;
   }
+
+  .menuoptions li:nth-child(6) {
+    margin-bottom: 0px;
+  }
+
   .dashboard {
+    gap: 48px;
     display: none;
+  }
+
+  .show-dashboard {
+    display: flex !important;
   }
 
   .lowerdivright,
   .upperdivright {
     margin-right: 24px;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
   }
 }
 
